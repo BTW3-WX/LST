@@ -11,3 +11,81 @@
 .carousel-item{
     padding:7% 15%;
 }
+/* newsletter Styling */
+#contact h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: #47B5FF;
+    margin-bottom: 10px;
+}
+#contact p{
+    color: #47B5FF;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+#contact .wrapper form{
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    margin: 0 auto;
+}
+#contact .wrapper form input{
+    padding: 8px;
+    border:  1px solid black;
+    outline: none;
+    border-radius: 20px;
+    margin: 15px 0;
+}
+#contact .wrapper form .button{
+    
+    padding: 8px;
+    margin-bottom: 100px;
+    background: #47B5FF;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+#contact .wrapper form .button:hover{
+    background: #1A1B1E;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Footer Styling  */
+.footer-bottom {
+    background: #47B5FF;
+    color: black;
+}
+.footer-bottom p{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Scroll up Styling */
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    border: 1px solid #fff;
+    background: #0A2940;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    opacity: 1;
+    pointer-events: auto;
+    bottom: 30px;
+}
+
