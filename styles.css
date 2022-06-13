@@ -1,0 +1,13 @@
+#testimonials{
+    text-align: center;
+    background-color: #47B5FF;
+    color: #fff;
+}
+.testimonials-image{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+.carousel-item{
+    padding:7% 15%;
+}
