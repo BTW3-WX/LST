@@ -54,16 +54,18 @@ html{
 }
 .btn{
     display: inline-block;
-    padding: 15px 25px;
+    padding: 9px 16px;
     margin-right: 30px;
     margin-top: 10px;
     text-decoration: none;
     border-radius: 25px;
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     overflow: hidden;
     transition: all 0.5s ease;
+    border: 3px solid;
+    border-radius: 15px;
 }
 
 
@@ -78,167 +80,115 @@ html{
 
 /* Top Navbar */
 
-.showcase .navbar-top{
+nav{
+    display: flex;
+    height: 53px;
     width: 100%;
-    display: flex;
-    padding: 0 80px;
-    margin: 0 auto;
+    background: #0a2940;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    background-color: #464e55;
-    top: 0;
-    left: 0;
-}
-.showcase .left{
-    display: flex;
-    list-style: none;
-}
-.showcase .left li a{
-    display: inline-block;
-    font-size: 13px;
-    text-decoration: none;
-    color: #95A2BB;
-    padding: 5px 15px;
-    transition: all 0.5s ease;
-}
-.showcase .left li a:hover{
-    color: #288d9a;
-}
-.showcase .left li:first-child{
-    font-weight: 700;
-    border-right: 1px solid #536DAF;
-}
-.showcase .right{
-    display: flex;
-    list-style: none;
-}
-.showcase .right li a{
-    display: inline-block;
-    padding: 5px 15px;
-    text-decoration: none;
-    color: #95A2BB;
-    transition: all 0.5s ease;
-}
-.showcase .right li a:hover{
-    color:  #288d9a;
-}
-
-/* Bottom Navbar */
-.showcase .navbar-bottom{
-    width: 100%;
-    background: #cfcfcf;
-    padding: 12px 53px;
-    align-items: center;
-    margin:  auto;
-    display: flex;
-    position: fixed; 
-    justify-content: space-between;
-    overflow: hidden;
-   
-}
-.navbar-bottom.sticky{
-    padding: 15px 95px;
-    background: #fff;
-    border-bottom: 1px solid #0A2940;
-    color: #0A2940;
-    top: 0;
-    z-index: 999;
-}
-.showcase .navbar-bottom .brand-left{
-    /* color: #578ad7;
-    font-family: 'Baloo Bhai2', cursive;
-    font-size: 20px;
-    font-weight: 700;
-    text-decoration: none; */
-    transition: all 0.5s ease;
-    width: 23px;
-}
-.showcase .navbar-bottom .brand-left img{
-    width: 56px;
-    border: 2px solid #3c617d;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-items: center;
-    margin: -1px;
-}
-.showcase .navbar-bottom.sticky .brand-left{
-    color: #0A2940;
-}
-.showcase .navbar-bottom .brand-left:hover{
-    color: #0A2940;
-}
-.showcase .navbar-bottom .menu-right{
-    display: flex;
-    list-style: none;
-    font-size: 14px;
+    padding: 6px 50px 0 100px;
+    flex-wrap: wrap;
+  }
+  nav .logo{
+    color: #fff;
+    font-size: 35px;
     font-weight: 600;
-}
-.showcase .navbar-bottom.sticky .menu-right li:last-child{
-    display: none;
-}
-.showcase .navbar-bottom .menu-right a{
-    text-decoration: none;
-    display: inline-block;
-    padding: 0 20px;
-    color: #1A1B1E;
-    transition: all 0.5s ease;
-    font-family: 'Baloo Bhai2', cursive;
-    font-size: large;
-    text-transform: uppercase;
-}
-.showcase .navbar-bottom .menu-right a:hover{
-    color:  #288d9a;
-    text-decoration: overline ;
   
-}
-
-/* Navbar Bottom Search Form */
-.navbar-bottom .search-form{
-    position: absolute;
-    top: 60%;
-    right: 10%;
-    background: #f4f4f4;
-    width: 350px;
-    height: 28px;
+  }
+  nav ul{
     display: flex;
-    align-items: center;
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: all 0.5s ease;
-}
-.navbar-bottom .search-form.active{
-    transform: scaleY(1);
-}
-
-.navbar-bottom .search-form input{
-    width: 100%;
-    height: 100%;
-    font-size: 20px;
-    border: none;
-    background: #f4f4f4;
-    color: #1A1B1E;
-    padding: 14px;
-    text-transform: none;
-    outline: none;
-}
-.navbar-bottom .search-form label{
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  nav ul li{
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    color: #111;
+    background: #fff;
+    text-decoration: none;
+  }
+  nav .menu-btn i{
+    color: #fff;
+    font-size: 22px;
     cursor: pointer;
-    font-size: 30px;
-    border: none;
-    margin-right: 12px;
-    font-family: 'Baloo Bhai2', cursive;
-}
-.navbar-bottom .search-form label:hover{
-    color: rgb(45, 60, 130);
-  
-}
+    display: none;
+  }
+  input[type="checkbox"]{
+    display: none;
+  }
+  @media (max-width: 1000px){
+    nav{
+      padding: 0 40px 0 50px;
+    }
+  }
+  @media (max-width: 920px) {
+    nav .menu-btn i{
+      display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+      content: "\f00d";
+    }
+    nav ul{
+      position: fixed;
+      top: 52px;
+      left: -100%;
+      background: #111;
+      height: 100vh;
+      width: 100%;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+      left: 0;
+    }
+    nav ul li{
+      width: 100%;
+      margin: 40px 0;
+    }
+    nav ul li a{
+      width: 100%;
+      margin-left: -100%;
+      display: block;
+      font-size: 13px;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      font-family: 'Poppins', sans-serif;
+    }
+    #click:checked ~ ul li a{
+      margin-left: 0px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+      background: none;
+      color: cyan;
+      text-decoration: none;
+    }
+  }
+  .logo img {
+      height: 34px;
+      margin-top: -15px;
+      border: 1px solid white;
+      border-radius: 4px;
+  }
 
 /* Showcase-content Section styling */
 .showcase .showcase-content{
     max-width: 850px;
-    margin-top: 15%;
+    margin-top: 12%;
     padding: 0 95px;
 }
 .showcase .showcase-content h1{
@@ -259,14 +209,18 @@ html{
     text-align: justify;
 }
 .showcase .showcase-content .btn-left{
-    background: linear-gradient(to right, #d1e3d1 , #536DAF);
-    border:  2px solid black;
-    color: black;
+  
+    border: 3px solid;
+    border-radius: 15px;
+    border-radius: 12px;
+    cursor: pointer;;
+
 }
 .showcase .showcase-content .btn-right{
-    background: linear-gradient(to right, #d1e3d1 , #536DAF);
-    border:  2px solid black;
-    color: black;
+    border: 3px solid;
+    border-radius: 15px;
+    border-radius: 12px;
+    cursor: pointer;
 }
 .burger{
     display: none;
@@ -511,87 +465,81 @@ html{
 
 @media only screen and (max-width:1043px ){
     .showcase .left {
-      display: none;
-    }
-    .showcase .right{
         display: none;
-    }
-    .showcase .navbar-bottom .menu-right{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-       margin: auto;
-    }
-    .showcase .navbar-bottom .menu-right li a{
-        padding: 2px 0px;
-        text-decoration: underline;
-        text-transform: uppercase;
-        color: #ccc;
-
-    }
-    .showcase .navbar-bottom .brand-left {
-        flex-direction: column;
-        
-    }
-    .burger{
-        display: block;
-    }
-    .h-nav{
-        height: 51px;
-    }
-    .v-class{
-        opacity: 0;
-    }
-   
-    .navbar-bottom .brand-left {
-        display: absolute;
-        top: 12px;
-        right: 2%;
-    }
-    .showcase{
-        height: wa;
-    }
-    .showcase .showcase-content{
-        display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 188px auto;
-   
-    }
-    .showcase .showcase-content h1{
-        font-size: 28px;
-        text-align: center;
-    }
-    .showcase .showcase-content p{
-        font-size: 12px;
-        text-align: center;
-    }
-    .showcase .showcase-content .btn-left{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        padding: 3px 16px ;
-
-    }
-    .showcase .showcase-content .btn-right{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        padding: 3px 16px ;
-
-    }
-    .showcase .navbar-bottom{ 
-        background: linear-gradient(to right, #161916 , #578ad7);
-        
-    }
-    .showcase .navbar-bottom .menu-right li a:hover{
-        padding: 23px;
-        transition: all 0.7s ease-in-out;
-    }
+      }
+      .showcase .right{
+          display: none;
+      }
+      .showcase .navbar-bottom .menu-right{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+         margin: auto;
+      }
+      .showcase .navbar-bottom .menu-right li a{
+          padding: 2px 0px;
+          text-decoration: underline;
+          text-transform: uppercase;
+          color: #ccc;
+  
+      }
+      .showcase .navbar-bottom .brand-left {
+          flex-direction: column;
+          
+      }
+      .burger{
+          display: block;
+      }
+      .h-nav{
+          height: 51px;
+      }
+      .v-class{
+          opacity: 0;
+      }
+     
+      .navbar-bottom .brand-left {
+          display: absolute;
+          top: 12px;
+          right: 2%;
+      }
+      .showcase .showcase-content{
+          display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 30%;
+      padding: 0;
+     
+      }
+      .showcase .showcase-content h1{
+          font-size: 28px;
+          text-align: center;
+      }
+      .showcase .showcase-content p{
+          font-size: 12px;
+          text-align: center;
+      }
+      .showcase .showcase-content .btn-left{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          text-align: center;
+          padding: 3px 16px ;
+  
+      }
+      .showcase .showcase-content .btn-right{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          text-align: center;
+          padding: 3px 16px ;
+  
+      }
+      .showcase .navbar-bottom{ 
+          background: linear-gradient(to right, #161916 , #578ad7);
+          
+      }
 }
