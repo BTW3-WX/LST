@@ -421,7 +421,7 @@ html{
 #contact h2{
     font-size: 40px;
     font-weight: 600;
-    color: #47B5FF;
+    color: #0a2940;
     margin-bottom: 10px;
 }
 #contact p{
@@ -468,6 +468,18 @@ html{
     font-size: 14px;
     font-weight: 600;
 }
+
+/* bootstrap footer styling */
+.bg-darkk {
+    background-color: #0a2940;
+}
+.tcolor{
+    color: #fefefe;
+}
+.lcolor a{
+  color: white;
+}
+
 
 /* Scroll up Styling */
 .scroll-up-btn{
