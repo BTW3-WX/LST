@@ -176,7 +176,7 @@ nav{
     nav ul li a.active,
     nav ul li a:hover{
       background: none;
-      color: cyan;
+      color: #55BA53;
       text-decoration: none;
     }
   }
@@ -258,7 +258,7 @@ nav{
     transition: all 0.5s ease;
 }
 #services .items .item h3{
-    color: #47B5FF;
+    color: #55BA53;
     font-size: 1.25em;
     margin: 5px;
 }
@@ -270,7 +270,7 @@ nav{
     color: #95A2BB;
 }
 #services .items .item:hover i{
-    color: #47B5FF;
+    color: #55BA53;
 }
 #services .items .item a{
     position: relative;
@@ -320,16 +320,16 @@ nav{
 }
 #goal .goal-text a{
     color: #f4f4f4;
-    background: #47B5FF;
+    background: #55BA53;
     text-decoration: none;
     font-size: 12px;
-    border: 1px solid #47B5FF;
+    border: 1px solid #55BA53;
     border-radius: 25px;
     padding: 3px 10px;
     transition: 0.5s;
 }
 #goal .goal-text a:hover{
-    color: #47B5FF;
+    color: #55BA53;
     background: #0A2940;
 }
 #goal .goal-text h2{
@@ -346,13 +346,13 @@ nav{
 #goal .goal-text .contents .content h3{
     font-size: 16px;
     padding-bottom: 5px;
-    color: #47B5FF;
+    color: #55BA53;
 }
 #goal .goal-text .contents .content p{
     color: #1A1B1E;
 }
 #goal .goal-text .contents .content i{
-    color: #47B5FF;
+    color: #55BA53;
     padding: 3px;
     background: #0A2940;
     align-self: flex-start;
@@ -363,7 +363,7 @@ nav{
 /* Testimonils Section */
 #testimonials{
     text-align: center;
-    background-color: #47B5FF;
+    background-color: #55BA53;
     color: #fff;
 }
 .testimonials-image{
@@ -548,7 +548,7 @@ nav{
 }
 
 /* for responsiveness */
-@media only screen and (max-width:1043px ){
+@media only screen and (max-width:1028px ){
     .showcase .left {
         display: none;
       }
@@ -627,4 +627,29 @@ nav{
           background: linear-gradient(to right, #161916 , #578ad7);
           
       }
+}
+/* Scroll up Styling */
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    border: 1px solid #fff;
+    background: #0A2940;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    opacity: 1;
+    pointer-events: auto;
+    bottom: 30px;
 }
