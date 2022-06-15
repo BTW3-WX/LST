@@ -89,6 +89,9 @@ nav{
     justify-content: space-between;
     padding: 6px 50px 0 100px;
     flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
   }
   nav .logo{
     color: #fff;
@@ -188,8 +191,8 @@ nav{
 /* Showcase-content Section styling */
 .showcase .showcase-content{
     max-width: 850px;
-    margin-top: 12%;
-    padding: 0 95px;
+    margin-top: 0%;
+    padding: 164px 95px;
 }
 .showcase .showcase-content h1{
     color: rgb(33, 122, 230);
