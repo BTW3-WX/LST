@@ -294,7 +294,7 @@ nav{
 }
 #services .items .item:hover{
     background:#0A2940;
-    transform: translateY(-50px);
+    transform: translateY(-25px);
 }
 #services .items .item:hover h3{
     color: #f4f4f4;
