@@ -1,9 +1,7 @@
-burger =document.querySelector('.burger')
-navbar = document.querySelector('.navbar-bottom')
-navList = document.querySelector('.menu-right')
-
-burger.addEventListener ('click',()=>{
-    navbar.classList.toggle('h-nav');
-    navList.classList.toggle('v-class');
-})
-
+let searchForm = document.querySelector('.search-form');
+document.querySelector('#search-btn').onclick = () =>{
+    searchForm.classList.toggle('active');
+}
+window.onscroll = () =>{
+    searchForm.classList.remove('active');
+}
