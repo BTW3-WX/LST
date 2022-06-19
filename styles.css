@@ -668,6 +668,7 @@ top: 0;
 /* Clients Section
 --------------------------------*/
 #clients {
+  background: #e2e2e2;
     padding: 60px 0;
   }
   #clients .section-header{
@@ -680,6 +681,8 @@ top: 0;
   #clients img {
     opacity: 0.5;
     transition: 0.3s;
+    max-height: 50px;
+    max-width: 200px;
   }
   #clients img:hover {
     opacity: 1;
@@ -703,6 +706,7 @@ top: 0;
   --------------------------------*/
   #testimonials {
     padding: 60px 0;
+    background: #cfcfcf;
   }
   #testimonials .section-header {
     margin-bottom: 40px;
