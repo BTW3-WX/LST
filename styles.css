@@ -340,6 +340,7 @@ top: 0;
 }
 
 
+
 .showcase .showcase-content .btn-left{
   
     border: 3px solid white;
@@ -1178,6 +1179,7 @@ vertical-align: middle;
           flex-direction: column;
           text-align: center;
           padding: 3px 16px ;
+          margin-left: 11%;
   
       }
       .showcase .showcase-content .btn-right{
@@ -1187,11 +1189,15 @@ vertical-align: middle;
           flex-direction: column;
           text-align: center;
           padding: 3px 16px ;
+          margin-left: 11%;
   
       }
       .showcase .navbar-bottom{ 
           background: linear-gradient(to right, #161916 , #578ad7);
           
+      }
+      #carouselExampleIndicators .carousel-inner .carousel-item h1{
+        font-size: 1.5rem;
       }
 }
 /* Scroll up Styling */
