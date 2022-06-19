@@ -91,6 +91,9 @@ html{
     color: #55BA53;
     border-color: #55BA53;
 }
+.pad{
+    padding: 9px;
+}
 
 
 
@@ -137,9 +140,9 @@ nav{
   nav ul li a{
     color: white;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
-    padding: 8px 15px;
+    padding: 0px 12px;
     border-radius: 5px;
     letter-spacing: 1px;
     transition: all 0.3s ease;
@@ -163,7 +166,7 @@ nav{
       padding: 0 40px 0 50px;
     }
   }
-  @media (max-width: 920px) {
+  @media (max-width: 1200px) {
     nav .menu-btn i{
       display: block;
     }
@@ -335,6 +338,7 @@ top: 0;
 	font-size: 1.2em;
 	font-weight: 500;
 }
+
 
 .showcase .showcase-content .btn-left{
   
@@ -1155,7 +1159,7 @@ vertical-align: middle;
         align-items: center;
         flex-direction: column;
         margin-top: 0%;
-        padding: 35px 0;
+        padding:  0;
         font-size: 0.7rem;
      
       }
