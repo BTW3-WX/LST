@@ -491,8 +491,8 @@ top: 0;
     margin-bottom: 10px;
 }
 .slider{
-    
     display: flex;
+    margin-bottom: 10px;
   }
   .slider .card{
     flex: 1;
