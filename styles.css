@@ -615,7 +615,7 @@ top: 0;
   margin-bottom: 0;
   padding: 0 20px 20px 20px;
 }
-/* Profile page */
+
 /* Team Section
 --------------------------------*/
 #team .section-header h3{
@@ -835,11 +835,12 @@ top: 0;
     border: 1px solid #ececec;
     border-radius: 10px;
     margin: 20px;
-    box-shadow: 5px 10px 8px #888888;
+    box-shadow: 5px 10px 8px black;
     transition: all 0.5s ease;
 }
 .blog-box:hover{
-    transform: translateY(-45px);
+    transform: translateY(-25px);
+    background: #13a456;
 }
 .blog-img{
     width: 100%;
@@ -855,6 +856,7 @@ top: 0;
 .blog-text{
     padding: 30px;
     display: flex;
+    
     flex-direction: column;
 }
 .blog-text span{
@@ -867,12 +869,12 @@ top: 0;
     color: #272727;
 }
 .blog-text .blog-title:hover{
-    color: #f33c3c;
+    color: #fff;
     transition: all ease 0.3s;
     text-decoration: none;
 }
 .blog-text p {
-    color: #9b9b9b;
+    color: #1A1B1E;
     font-size: 0.9rem;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -883,11 +885,11 @@ top: 0;
 }
 .blog-text a{
     color: #0f0f0f;
+    text-decoration: none;
 }
 .blog-text a:hover{
-    color: #f33c3c;
+    color: #fff;
     transition: all ease 0.3s;
-    text-decoration: none;
 }
 
 /* newsletter Styling */
