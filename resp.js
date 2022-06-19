@@ -6,3 +6,4 @@ burger.addEventListener ('click',()=>{
     navbar.classList.toggle('h-nav');
     navList.classList.toggle('v-class');
 })
+
