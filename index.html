@@ -16,9 +16,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="boxicons-2.1.2/css/boxicons.min.css">
-<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+      <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"> -->
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.0/swiper-bundle.min.js"></script>
+<!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/> -->
+<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> -->
 </head>
 <body id="home">
   <div class="scroll-up-btn">
@@ -212,80 +221,123 @@
  </div>
 </section>
 
- <!--testimonials-->
-  <section id="testimonials">
-    <div class="heading">
-      <h3>Our Mentors and Collaborators</h3>
-    </div>
-    <div class="slider owl-carousel">
-      <div class="card">
-         <div class="img">
-            <img src="images/Screenshot (222).png" alt="">
-         </div>
-         <div class="content">
-            
-            <p>
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione beatae at deleniti ex nam. Corporis accusantium. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.
-            </p>
-         </div>
-      </div>
-      <div class="card">
-         <div class="img">
-            <img src="images/man.jpg" alt="">
-         </div>
-         <div class="content">
-            <div class="title">
-               Pricilla Preez
-            </div>
-            <div class="sub-title">
-               Web Developer
-            </div>
-            <p>
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.
-            </p>
-         </div>
-      </div>
-      <div class="card">
-         <div class="img">
-            <img src="images/man.jpg" alt="">
-         </div>
-         <div class="content">
-            <div class="title">
-               Eliana Maia
-            </div>
-            <div class="sub-title">
-               App Developer
-            </div>
-            <p>
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.
-            </p>
-         </div>
-      </div>
-   </div>
+  <!-- ======= Our Clients Section ======= -->
+  <section id="clients">
+    <div class="container" data-aos="zoom-in">
 
-  </section>
-      <!--testimonials ends here-->
+      <header class="section-header">
+        <h3>Our Partners</h3>
+      </header>
+
+      <div class="clients-slider swiper">
+        <div class="swiper-wrapper align-items-center">
+          <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+  </section><!-- End Our Clients Section -->
+
+  <!-- ======= Testimonials Section ======= -->
+  <section id="testimonials" class="section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <header class="section-header">
+        <h3>Testimonials</h3>
+      </header>
+
+      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <img src="assets/img/testimonial-1.jpg" class="testimonial-img" alt="">
+              <h3>Saul Goodman</h3>
+              <h4>Lawyer</h4>
+              <p>
+                <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <img src="assets/img/testimonial-2.jpg" class="testimonial-img" alt="">
+              <h3>Sara Wilsson</h3>
+              <h4>Designer</h4>
+              <p>
+                <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <img src="assets/img/testimonial-3.jpg" class="testimonial-img" alt="">
+              <h3>Jena Karlis</h3>
+              <h4>Store Owner</h4>
+              <p>
+                <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <img src="assets/img/testimonial-4.jpg" class="testimonial-img" alt="">
+              <h3>Matt Brandon</h3>
+              <h4>Freelancer</h4>
+              <p>
+                <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <img src="assets/img/testimonial-5.jpg" class="testimonial-img" alt="">
+              <h3>John Larson</h3>
+              <h4>Entrepreneur</h4>
+              <p>
+                <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
+            </div>
+          </div><!-- End testimonial item -->
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+  </section><!-- End Testimonials Section -->
 
       <!--Blog Section-->
-  <Section id="blog">
-    <div class="blog-heading">
-      <h3>Recent Blogs</h3>
-    </div>
-    <div class="blog-container">
-
-      <div class="blog-box">
-        <div class="blog-img">
-          <img src="images/img1.jpg" alt="Blog">
-        </div>
-        <div class="blog-text">
-          <span>18 July 2021 / Web Design</span>
-          <a href="" class="blog-title">What has happpend to crypto market. </a>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint quam beatae. Minus dolores beatae facere consectetur eveniet quos natus quam quis est numquam? Aperiam assumenda.</p>
-          <a href="#">Read More</a>
-        </div>
+  <Section id="blog" >
+    <div class="container" data-aos="zoom-out">
+      <div class="blog-heading">
+        <h3>Recent Blogs</h3>
       </div>
-     
-      <div class="blog-box">
+      <div class="blog-container">
+  
+        <div class="blog-box">
           <div class="blog-img">
             <img src="images/img1.jpg" alt="Blog">
           </div>
@@ -295,9 +347,9 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint quam beatae. Minus dolores beatae facere consectetur eveniet quos natus quam quis est numquam? Aperiam assumenda.</p>
             <a href="#">Read More</a>
           </div>
-      </div>
-      
-       <div class="blog-box">
+        </div>
+       
+        <div class="blog-box">
             <div class="blog-img">
               <img src="images/img1.jpg" alt="Blog">
             </div>
@@ -307,6 +359,19 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint quam beatae. Minus dolores beatae facere consectetur eveniet quos natus quam quis est numquam? Aperiam assumenda.</p>
               <a href="#">Read More</a>
             </div>
+        </div>
+        
+         <div class="blog-box">
+              <div class="blog-img">
+                <img src="images/img1.jpg" alt="Blog">
+              </div>
+              <div class="blog-text">
+                <span>18 July 2021 / Web Design</span>
+                <a href="" class="blog-title">What has happpend to crypto market. </a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint quam beatae. Minus dolores beatae facere consectetur eveniet quos natus quam quis est numquam? Aperiam assumenda.</p>
+                <a href="#">Read More</a>
+              </div>
+          </div>
         </div>
       </div>
   </Section>
@@ -451,7 +516,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> 
   <script src="https://kit.fontawesome.com/6b9e78ceec.js" crossorigin="anonymous"></script>
-  <script src="app.js"></script>
+
   <!-- Footer -->
   <!-- JQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -461,21 +526,17 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
-  <!--Swiper-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
- <script>
-    $(".slider").owlCarousel({
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: 2000, 
-      autoplayHoverPause: true,
-      smartSpeed: 1500,
-      animateIn: 'linear',
-      animateOut: 'linear'
-    });
- </script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+ 
 	<!-- bootstrap javascript cdn -->
-	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<!-- <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
 </body>
 </html>
