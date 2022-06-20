@@ -359,103 +359,7 @@ top: 0;
     color: white;
 }
 
-/* About Us Section
---------------------------------*/
-#about .section-header h3{
-  text-align: center;
-  font-style: normal;
-  font-weight: 700;
-  padding-bottom: 10px;
-} 
-#about .section-header p{
-  text-align: center;
-  color: #333;
-  padding-bottom: 15px;
-}
 
-#about {
-  background: url("../img/about-bg.jpg") center top no-repeat fixed;
-  background-size: cover;
-  padding: 60px 0 40px 0;
-  position: relative;
-}
-#about::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.92);
-  z-index: 9;
-}
-#about .container {
-  position: relative;
-  z-index: 10;
-}
-#about .about-col {
-  background: #fff;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
-  margin-bottom: 20px;
-  text-decoration: none;
-}
-#about .about-col .img {
-  position: relative;
-}
-#about .about-col .img img {
-  border-radius: 4px 4px 0 0;
-}
-#about .about-col .icon {
-  width: 64px;
-  height: 64px;
-  text-align: center;
-  position: absolute;
-  background-color: #18d26e;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  left: calc(50% - 32px);
-  bottom: -30px;
-  transition: 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#about .about-col i {
-  font-size: 28px;
-  line-height: 0;
-  color: #fff;
-  transition: 0.3s;
-}
-#about .about-col:hover .icon {
-  background-color: #fff;
-}
-#about .about-col:hover i {
-  color: #18d26e;
-}
-#about .about-col h2 {
-  color: #000;
- text-align: center;
-  font-weight: 700;
-  font-size: 20px;
-  padding: 0;
-  margin: 40px 0 12px 0;
-}
-#about .about-col h2 a {
-  color: #000;
-}
-#about .about-col h2 a:hover {
-  color: #18d26e;
-  text-decoration: none;
-
-}
-#about .about-col p {
-  font-size: 14px;
-  line-height: 24px;
-  color: #333;
-  margin-bottom: 0;
-  padding: 0 20px 20px 20px;
-}
 /* Showcase Area Styling
  /* Services Section Styling */
  #services .items{
@@ -467,7 +371,7 @@ top: 0;
 
 }
 #services .items .item{
-    text-align: center;
+  text-align: center;
     position: relative;
     width: 220px;
     height: 250px;
@@ -520,10 +424,7 @@ top: 0;
 
 /* Services Section Bottom */
 #goal{
-    display: flex;
-    flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: flex;
   align-items: center;
     padding-top: 20px;
 }
@@ -544,6 +445,7 @@ top: 0;
 }
 #goal .goal-text{
     margin: 0 40px;
+
 }
 #goal .goal-text a{
     color: #f4f4f4;
@@ -574,22 +476,225 @@ top: 0;
     font-size: 16px;
     padding-bottom: 5px;
     color: #55BA53;
+    text-align: left;
 }
 #goal .goal-text .contents .content p{
     color: #1A1B1E;
+
 }
 #goal .goal-text .contents .content i{
     color: #55BA53;
     padding: 3px;
     background: #0A2940;
-    align-self: flex-start;
+    /* align-self: flex-start; */
     border-radius: 5px;
     margin-right: 5px;
+}
+@media(max-width: 1028px){
+  #goal{
+    flex-direction: column;
+  }
+  /* #goal .goal-text .contents .content {
+    text-align: center;
+    flex-direction: column;
+  } */
+  #goal .goal-img img{
+    width: 100%;
+  }
+}
+@media(max-width: 768px){
+  #goal{
+    flex-direction: column;
+  }
+  #goal .goal-text .contents .content {
+    /* text-align: center; */
+    justify-content: center;
+    max-width: 300px;
+    flex-direction: column;
+  }
+  #goal .goal-img img{
+    max-width: 100%;
+  }
+}
+
+/* About Us Section
+--------------------------------*/
+#about .section-header h3{
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  padding-bottom: 10px;
+} 
+#about .section-header p{
+  text-align: center;
+  color: #333;
+  padding-bottom: 15px;
+}
+
+#about {
+  background: url("../img/about-bg.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  position: relative;
+}
+#about::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: 9;
+}
+#about .container {
+  position: relative;
+  z-index: 10;
+}
+#about .about-col {
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+#about .about-col .img {
+  position: relative;
+}
+#about .about-col .img img {
+  border-radius: 4px 4px 0 0;
+}
+#about .about-col .icon {
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  position: absolute;
+  background-color: #18d26e;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  left: calc(50% - 32px);
+  bottom: -30px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#about .about-col i {
+  font-size: 28px;
+  line-height: 0;
+  color: #fff;
+  transition: 0.3s;
+}
+#about .about-col:hover .icon {
+  background-color: #fff;
+}
+#about .about-col:hover i {
+  color: #18d26e;
+}
+#about .about-col h2 {
+  color: #000;
+ text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0;
+  margin: 40px 0 12px 0;
+}
+#about .about-col h2 a {
+  color: #000;
+  text-decoration: none;
+
+}
+#about .about-col h2 a:hover {
+  color: #18d26e;
+  text-decoration: none;
+
+}
+#about .about-col p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333;
+  margin-bottom: 0;
+  padding: 0 20px 20px 20px;
+}
+
+/* Team Section
+--------------------------------*/
+#team .section-header h3{
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  padding-bottom: 10px;
+} 
+#team .section-header p{
+  text-align: center;
+  color: #333;
+  padding-bottom: 30px;
+}
+#team {
+  background: #fff;
+  padding: 60px 0;
+}
+#team .member {
+  text-align: center;
+  margin-bottom: 20px;
+  background: #000;
+  position: relative;
+}
+#team .member .member-info {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+}
+#team .member .member-info-content {
+  margin-top: -50px;
+  transition: margin 0.2s;
+}
+#team .member:hover .member-info {
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+  transition: 0.4s;
+}
+#team .member:hover .member-info-content {
+  margin-top: 0;
+  transition: margin 0.4s;
+}
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+#team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+#team .member .social {
+  margin-top: 15px;
+}
+#team .member .social a {
+  transition: none;
+  color: #fff;
+}
+#team .member .social a:hover {
+  color: #18d26e;
+}
+#team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
 }
 
 /* Clients Section
 --------------------------------*/
 #clients {
+  background: #e2e2e2;
     padding: 60px 0;
   }
   #clients .section-header{
@@ -602,6 +707,8 @@ top: 0;
   #clients img {
     opacity: 0.5;
     transition: 0.3s;
+    max-height: 50px;
+    max-width: 200px;
   }
   #clients img:hover {
     opacity: 1;
@@ -625,6 +732,7 @@ top: 0;
   --------------------------------*/
   #testimonials {
     padding: 60px 0;
+    background: #cfcfcf;
   }
   #testimonials .section-header {
     margin-bottom: 40px;
@@ -727,11 +835,12 @@ top: 0;
     border: 1px solid #ececec;
     border-radius: 10px;
     margin: 20px;
-    box-shadow: 5px 10px 8px #888888;
+    box-shadow: 5px 10px 8px black;
     transition: all 0.5s ease;
 }
 .blog-box:hover{
-    transform: translateY(-45px);
+    transform: translateY(-25px);
+    background: #13a456;
 }
 .blog-img{
     width: 100%;
@@ -747,6 +856,7 @@ top: 0;
 .blog-text{
     padding: 30px;
     display: flex;
+    
     flex-direction: column;
 }
 .blog-text span{
@@ -759,12 +869,12 @@ top: 0;
     color: #272727;
 }
 .blog-text .blog-title:hover{
-    color: #f33c3c;
+    color: #fff;
     transition: all ease 0.3s;
     text-decoration: none;
 }
 .blog-text p {
-    color: #9b9b9b;
+    color: #1A1B1E;
     font-size: 0.9rem;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -775,11 +885,11 @@ top: 0;
 }
 .blog-text a{
     color: #0f0f0f;
+    text-decoration: none;
 }
 .blog-text a:hover{
-    color: #f33c3c;
+    color: #fff;
     transition: all ease 0.3s;
-    text-decoration: none;
 }
 
 /* newsletter Styling */
