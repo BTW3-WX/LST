@@ -1047,6 +1047,7 @@ top: 0;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     letter-spacing: 3px;
+    color:  #18d26e;
     border-left: 4px solid #18d26e;
   }
   #footer .footer-top .footer-info p {
@@ -1106,6 +1107,8 @@ top: 0;
   }
   #footer .footer-top .footer-links ul {
     list-style: none;
+    text-align: left;
+    text-decoration: none;
     padding: 0;
     margin: 0;
   }
@@ -1119,6 +1122,7 @@ top: 0;
   }
   #footer .footer-top .footer-links ul li:first-child {
     padding-top: 0;
+    text-decoration: none;
   }
   #footer .footer-top .footer-links ul a {
     color: #eee;
