@@ -516,6 +516,11 @@ top: 0;
     max-width: 100%;
   }
 }
+@media(max-width:600px){
+  #goal .goal-img img{
+    max-width: 400px;
+  }
+}
 
 /* About Us Section
 --------------------------------*/
@@ -532,7 +537,7 @@ top: 0;
 }
 
 #about {
-  background: url("../img/about-bg.jpg") center top no-repeat fixed;
+  background: url("assets/img/about-bg.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
@@ -1197,31 +1202,7 @@ height: 30px;
 width: 30px;
 vertical-align: middle;
 }
-/* Scroll up Styling */
-.scroll-up-btn{
-    position: fixed;
-    height: 45px;
-    width: 42px;
-    border: 1px solid #fff;
-    background: #0A2940;
-    right: 30px;
-    bottom: 10px;
-    text-align: center;
-    line-height: 45px;
-    color: #fff;
-    z-index: 9999;
-    font-size: 30px;
-    border-radius: 6px;
-    cursor: pointer;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
-}
-.scroll-up-btn.show{
-    opacity: 1;
-    pointer-events: auto;
-    bottom: 30px;
-}
+
 
 /* for responsiveness */
 @media only screen and (max-width:1028px ){
@@ -1309,29 +1290,4 @@ vertical-align: middle;
       #carouselExampleIndicators .carousel-inner .carousel-item h1{
         font-size: 1.5rem;
       }
-}
-/* Scroll up Styling */
-.scroll-up-btn{
-    position: fixed;
-    height: 45px;
-    width: 42px;
-    border: 1px solid #fff;
-    background: #0A2940;
-    right: 30px;
-    bottom: 10px;
-    text-align: center;
-    line-height: 45px;
-    color: #fff;
-    z-index: 9999;
-    font-size: 30px;
-    border-radius: 6px;
-    cursor: pointer;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
-}
-.scroll-up-btn.show{
-    opacity: 1;
-    pointer-events: auto;
-    bottom: 30px;
 }
