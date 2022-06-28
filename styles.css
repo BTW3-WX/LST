@@ -1024,6 +1024,27 @@ top: 0;
       transform: rotate(360deg);
     }
   }
+
+  /* .btn-primaryy {
+    color: #fff;
+    background-color: #18d26e;
+   
+} */
+
+
+
+.btn-check:focus+.btn-success, .btn-success:focus {
+  color: #fff;
+  background-color: #18d26e;
+  border-color: #146c43;
+  box-shadow: 0 0 0 0.25rem rgb(60 153 110 / 50%);
+}
+
+.btn-bg {
+  color: rgb(255, 255, 255);
+  background-color: #18d26e;
+  border-color: rgb(25, 135, 84);
+}
   
 /* Footer Styling  */
 #footer {
