@@ -502,14 +502,14 @@ top: 0;
     width: 100%;
   }
 }
-@media(max-width: 768px){
+@media(max-width: 400px){
   #goal{
     flex-direction: column;
   }
   #goal .goal-text .contents .content {
     /* text-align: center; */
     justify-content: center;
-    max-width: 300px;
+    max-width: 200px;
     flex-direction: column;
   }
   #goal .goal-img img{
