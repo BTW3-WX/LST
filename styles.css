@@ -1120,6 +1120,9 @@ display: flex;
   #contact .php-email-form button[type=submit]:hover {
     background: #13a456;
   }
+  .con {
+    margin-left: 40px;
+  }
   @-webkit-keyframes animate-loading {
     0% {
       transform: rotate(0deg);
