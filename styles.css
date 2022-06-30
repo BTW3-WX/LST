@@ -693,7 +693,7 @@ display: flex;
   background-color: grey;
 }
 .partner-container{
- 
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -706,7 +706,7 @@ display: flex;
 }
 .slide-container{
   /* max-width: 1120px; */
- 
+
   width: 100%;
 }
 .slide-content{
@@ -819,8 +819,6 @@ display: flex;
     display: none;
   }
 }
-
-
   
   /* Testimonials Section
   --------------------------------*/

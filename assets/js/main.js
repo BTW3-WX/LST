@@ -253,41 +253,42 @@
   });
 
   /**
-   * Clients Slider
+   * Partners Slider
    */
-  new Swiper('.clients-slider', {
-    speed: 400,
+   var swiper = new Swiper(".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 25,
     loop: true,
+    speed: 600,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
     autoplay: {
-      delay: 5000,
+      delay: 6000,
       disableOnInteraction: false
     },
-    slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true
     },
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 20
-      },
-      480: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      },
-      640: {
-        slidesPerView: 4,
-        spaceBetween: 20
-      },
-      992: {
-        slidesPerView: 6,
-        spaceBetween: 20
-      }
-    }
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  
+    breakpoints:{
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
+        },
+    },
   });
-
   /**
    * Testimonials slider
    */
@@ -319,3 +320,4 @@
   });
 
 })()
+
