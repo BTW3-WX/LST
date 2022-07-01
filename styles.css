@@ -505,14 +505,21 @@ display: flex;
   #goal .goal-text .contents .content {
     /* text-align: center; */
     justify-content: center;
-    max-width: 200px;
+    max-width: 180px;
     flex-direction: column;
   }
   #goal .goal-img img{
     max-width: 100%;
+
   }
 }
-
+@media(max-width: 320px)
+{
+  #goal .goal-img img{
+    width: 77%;
+   
+  }
+}
 
 /* About Us Section
 --------------------------------*/
