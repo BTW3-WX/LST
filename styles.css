@@ -8,6 +8,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 a{
     text-decoration: none;
 }
@@ -316,7 +320,7 @@ top: 0;
 .showcase .showcase-content .btn-left{
   
     border: 3px solid white;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     border-radius: 12px;
     cursor: pointer;
     color: white;
@@ -325,7 +329,7 @@ top: 0;
 }
 .showcase .showcase-content .btn-right{
     border: 3px solid white;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     border-radius: 12px;
     cursor: pointer !important;
     color: white;
