@@ -470,6 +470,7 @@ display: flex;
 @media(max-width: 1028px){
   #goal{
     flex-direction: column;
+   
   }
   /* #goal .goal-text .contents .content {
     text-align: center;
@@ -477,6 +478,7 @@ display: flex;
   } */
   #goal .goal-img img{
     width: 95%;
+    margin-bottom: 10px;
     }
 }
 @media(max-width: 760px){
